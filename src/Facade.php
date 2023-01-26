@@ -59,7 +59,7 @@ class Facade extends DataContainer implements PayoutInterface {
      *
      */
 
-    public function reg2reg() {
+    public function reg2reg(): bool {
         try {
             $this->order->required('amount');
             $this->order->required('description');
